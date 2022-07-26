@@ -1,10 +1,18 @@
-import Shoes from "../components/shoes"
+import { Link } from 'react-router-dom';
 
 
 function Collections() {
   return (
-    <div className="py-10 px-10 md:px-15">
-      <Shoes />
+    <div className="py-10 md:py-20 px-10 md:px-15">
+      <Link className='text-lg px-8 py-4 block drop-shadow text-center bg-secondary text-white rounded mb-8' to='/collection/clothing' >
+        View Clothing
+      </Link>
+      <Link className='text-lg px-8 py-4 block drop-shadow text-center bg-secondary text-white rounded mb-8' to='/collection/jewelries' >
+        View Jewelries
+      </Link>
+      <Link className='text-lg px-8 py-4 block drop-shadow text-center bg-secondary text-white roundedsecondary' to='/collection/shoes' >
+        View Shoes
+      </Link>
     </div>
   )
 }
