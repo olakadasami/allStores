@@ -8,9 +8,9 @@ import Shoe5 from '../img/jpgs/shoe-5.jpg';
 
 function Shoes() {
   return (
-    <div className='py-10'>
-        <h1 className="text-center text-lg bold mb-10"> Shoes </h1>
-        <div className='flex flex-wrap gap-8 justify-around p-10'>
+    <div className='p-10'>
+        <h1 className="text-center text-lg font-bold mb-10"> Shoes </h1>
+        <div className='flex flex-wrap gap-10 justify-around '>
 
             <Shoe
                 img={Shoe1} 

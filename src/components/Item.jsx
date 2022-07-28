@@ -7,8 +7,8 @@ function Item({ name, price, img }) {
             <img className='w-full rounded' src={ img } alt={name} />
         </div>
         <div className="p-4">
-            <h2 className='mb-3'>{ name }</h2>
-            <p>{ price }</p>
+            <h2 className='mb-3 font-semibold'>{ name }</h2>
+            <p className='font-bold'>{ price }</p>
         </div>
     </div>
   )

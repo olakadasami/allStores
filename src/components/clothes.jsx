@@ -11,9 +11,9 @@ import Shirt3 from '../img/jpgs/shirt-3.jpg';
 function clothes() {
 
   return (
-    <div className='py-10'>
-        <h1 className="text-center mb-10">Clothing</h1>
-        <div className='flex flex-wrap gap-8 justify-around'>
+    <div className='p-10'>
+        <h1 className="text-center font-bold text-lg mb-10">Clothing</h1>
+        <div className='flex flex-wrap gap-10 justify-around'>
 
             <Item 
                 img={Jeans1}

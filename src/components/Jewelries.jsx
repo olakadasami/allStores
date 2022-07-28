@@ -9,9 +9,9 @@ import Jew5 from '../img/jpgs/jew-5.jpg';
 
 function Jewelries() {
   return (
-    <div className='py-10'>
-        <h1 className="text-center mb-10"> Jewelries </h1>
-        <div className='flex flex-wrap gap-8 justify-around'>
+    <div className='p-10'>
+        <h1 className="text-center font-bold text-lg mb-10"> Jewelries </h1>
+        <div className='flex flex-wrap gap-10 justify-around'>
 
             <Item 
                 img={Jew1} 
