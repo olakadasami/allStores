@@ -26,7 +26,7 @@ function Contact() {
     }
 
   return (
-      <form className='text-white rounded bg-primary w-4/5 sm:w-3/5 md:w-2/5 px-5 py-10 md:p-10 mx-auto mt-10' onSubmit={submitHandler} >
+      <form className='text-white rounded bg-trans backdrop-blur w-4/5 sm:w-3/5 md:w-2/5 px-5 py-10 md:p-10 mx-auto mt-10' onSubmit={submitHandler} >
 
         <h2 className='mb-8'>Tell us what you need..</h2>
 
@@ -56,7 +56,7 @@ function Contact() {
          onChange={(e => setMessage(e.target.value))} 
         />
 
-        <button className='bg-secondary text-white px-4 py-3 rounded'>Send</button>
+        <button className='bg-secondary hover:bg-black transition duration-300 ease-in-out font-bold text-white px-4 py-3 rounded'>Send</button>
 
       </form>
   )

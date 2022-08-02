@@ -8,7 +8,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-primary relative text-white">
       <Nav 
         isOpen={isOpen}
         setIsOpen={setIsOpen}

@@ -10,10 +10,10 @@ function Nav({ isOpen, setIsOpen }) {
   }
 
   return (
-      <nav className='flex p-8 justify-between items-center'>
+      <nav className='flex p-8 sticky top-0 justify-between items-center'>
 
         <div className="logo">
-          <Link className='hover:underline text-2xl font-bold' to='/'>Logo</Link>
+          <Link className='hover:underline text-2xl transition-all font-bold' to='/'>Logo</Link>
         </div>
 
         <ul className='md:justify-between text-lg font-semibold md:w-2/5 hidden md:flex'>
