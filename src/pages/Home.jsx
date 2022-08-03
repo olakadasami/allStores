@@ -5,10 +5,11 @@ import Shoes from '../components/Shoes';
 import Clothes from '../components/Clothes';
 
 import Hero from '../components/Hero';
+import Testimonials from '../components/Testimonials';
 
 function Home() {
   return (
-    <div id='header' className='relative'>
+    <div className='relative'>
       <section id="hero">
         <Hero />
       </section>
@@ -22,6 +23,10 @@ function Home() {
         <Clothes />
         <Jewelries />
         <Shoes />
+      </section>
+
+      <section id='testimonials' className='py-20'>
+        <Testimonials />
       </section>
 
       <section className=' bg-white drop-shadow py-20 px-10 mx-auto text-center' id="contact">
