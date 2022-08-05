@@ -53,7 +53,7 @@ export const shoeData = [
    
 ]
 
-export const clothesData = [
+export const jewData = [
     {
         img: Jew1,
         id: uuid(),
@@ -88,7 +88,7 @@ export const clothesData = [
 ]
 
 
-export const jewData = [
+export const clothesData = [
     {
         img: Jeans1,
         id: uuid(),

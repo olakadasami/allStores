@@ -10,7 +10,11 @@ module.exports = {
         secondary: '#cb5454',
         trans: 'rgba(0,0,0,0.7)',
         trans1: 'rgba(0,0,0,0.5)',
+      },
+      height: {
+        "sm-screen": "75vh"
       }
+
     },
   },
   plugins: [],

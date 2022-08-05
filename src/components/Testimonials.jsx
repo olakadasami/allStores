@@ -37,12 +37,12 @@ const Testimonials = () => {
 
 
   return (
-    <div className="mx-auto w-4/5 relative">
+    <div className="mx-auto w-full md:w-4/5 relative">
 
         <h1 className="font-bold text-4xl text-secondary mb-10 text-center">What others have to say</h1>
         <Testimonial testimonial={Reviews[currentIndex]} />
-        <div className="absolute z-10 top-1/2 left-10 cursor-pointer hover:shadow-lg p-2 rounded-full" onClick={leftHandler}><FaArrowLeft /></div>
-        <div className="absolute z-10 top-1/2 right-10 cursor-pointer hover:shadow-lg p-2 rounded-full" onClick={rightHandler}><FaArrowRight /></div>
+        <div className="absolute z-10 top-1/2 left-5 cursor-pointer hover:shadow-lg p-2 rounded-full" onClick={leftHandler}><FaArrowLeft /></div>
+        <div className="absolute z-10 top-1/2 right-5 cursor-pointer hover:shadow-lg p-2 rounded-full" onClick={rightHandler}><FaArrowRight /></div>
     </div>
   )
 }
