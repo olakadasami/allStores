@@ -1,50 +1,44 @@
-import React, { useState } from 'react'
-import { FaMinusCircle, FaPlusCircle, FaCartPlus } from 'react-icons/fa'
-
+import { BsCartPlus } from 'react-icons/bs'
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { useCartContext } from '../hooks/useCartContext'
 
 
-function Item({ name, price, img }) {
 
-  const [items, setItems] = useState(null)
+function Item({ item }) {
+
+  const { title, price, img } = item
+
+  const { dispatch } = useCartContext()
 
   const addHandler = () => {
-    setItems(items + 1)
+    dispatch({ type: "ADD_ITEM", payload: item })
+    console.log(title)
   }
 
-  const subtractHandler = () => {
-    if (items < 1) {
-      setItems(null)
-    } else {
-      setItems(items - 1)
-    }
-  }
 
 
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
         viewport={{ once: true }}
-        exit={{ opacity: 0, x: 100 }}
+        exit={{ opacity: 0 }}
 
-        className='w-full bg-white md:w-2/5 rounded drop-shadow-lg'>
+        className='w-48 bg-white rounded drop-shadow-lg'>
         <div>
-          <img className='w-full rounded' src={img} alt={name} />
+          <img className='w-full rounded' src={img} alt={title} />
         </div>
 
         <div className="p-4">
-          <h2 className='mb-3 font-semibold'>{name}</h2>
-          <p className='font-bold'>{price}</p>
+          <h2 className='mb-1 text-secondary font-semibold'>{title}</h2>
 
-          {items && <div className='flex gap-2 py-2 font-semibold items-center'>{`${items} items added to Cart`} <FaCartPlus /></div>}
-
-          <div className='flex items-center gap-5 w-2/5 py-3'>
-            <div className='cursor-pointer' onClick={subtractHandler}><FaMinusCircle /></div>
-            <div className='cursor-pointer' onClick={addHandler}><FaPlusCircle /></div>
+          <div className='flex items-center justify-between'>
+            <p className='font-bold'>{price}</p>
+            <div className='cursor-pointer hover:shadow hover:scale-110 transition-all duration-300 rounded-full p-2' onClick={addHandler}><BsCartPlus size={22} /></div>
           </div>
         </div>
 

@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 
 const socialVariant = {
   start: {
-    rotate: -180,
+    scale: 0.5,
     opacity: 0
   },
   end: {
-    rotate: 0,
+    scale: 1,
     opacity: 1,
     transition: {
       delay: 0.5,
@@ -17,9 +17,8 @@ const socialVariant = {
     }
   },
   hover: {
-    rotate: 360,
+    scale: 1.2,
     transition: {
-      delay: 0.5,
       duration: 0.5
     }
   }

@@ -23,68 +23,68 @@ export const shoeData = [
     {
         img: Shoe1,
         id: uuid(),
-        title:"Men's Sneakers",
+        title: "Sneakers",
         price: '$12.5'
     },
     {
         img: Shoe2,
         id: uuid(),
-        title:"Unisex All Stars Sneakers",
+        title: "Sneakers",
         price: '$8.99'
     },
     {
         img: Shoe3,
         id: uuid(),
-        title:"Female Blue Heels",
+        title: "Heels Blue",
         price: '$13.0'
     },
     {
         img: Shoe4,
         id: uuid(),
-        title:"Men's White Trainers",
+        title: "Trainers White",
         price: '$11.0'
     },
     {
         img: Shoe5,
         id: uuid(),
-        title:"Ladies Heels Nude",
+        title: "Heels Nude",
         price: '$10.99'
     },
-   
+
 ]
 
 export const jewData = [
     {
         img: Jew1,
         id: uuid(),
-        title:"Gold Ring With Diamonds",
+        title: "Gold Ring",
         price: '$80.0'
     },
     {
         img: Jew2,
         id: uuid(),
-        title:"15 carat beads",
+        title: "Beads",
         price: '$129.99'
     },
     {
         img: Jew3,
         id: uuid(),
-        title:"Ring",
+        title: "Ring",
         price: '$69.99'
     },
     {
         img: Jew4,
         id: uuid(),
-        title:"Diamond Bracelets",
+        title: "Diamond Bracelets",
         price: '$110.99'
     },
     {
         img: Jew5,
         id: uuid(),
-        title:"Gold Necklace",
+        title: "Gold Necklace",
         price: '$49.99'
     },
-   
+
 ]
 
 
@@ -92,32 +92,32 @@ export const clothesData = [
     {
         img: Jeans1,
         id: uuid(),
-        title:"Men's Denims",
+        title: "Denims",
         price: '$12.5'
     },
     {
         img: Jeans2,
         id: uuid(),
-        title:"Men's stock Jeans",
+        title: "Stock Jeans",
         price: '$8.99'
     },
     {
         img: Shirt1,
         id: uuid(),
-        title:"Men's round neck polo(pale yellow)",
+        title: "Round Neck",
         price: '$13.0'
     },
     {
         img: Shirt2,
         id: uuid(),
-        title:"Men's shirt white",
+        title: "Shirt White",
         price: '$11.0'
     },
     {
         img: Shirt3,
         id: uuid(),
-        title:"Men's shirt Black",
+        title: "Shirt Black",
         price: '$10.99'
     },
-   
+
 ]

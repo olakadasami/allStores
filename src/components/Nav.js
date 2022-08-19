@@ -1,19 +1,23 @@
 import { Link } from 'react-router-dom';
 
-function Nav({ isOpen, setIsOpen }) {
+import { useCartContext } from '../hooks/useCartContext'
 
+function Nav({ isOpen, setIsOpen, toogleCart }) {
+
+  const { ...state } = useCartContext()
+
+  const total = state.products.length
 
   const menuHandler = () => {
-
     setIsOpen(!isOpen)
-
   }
 
   return (
     <nav className='flex p-8 sticky top-0 justify-between items-center'>
 
-      <div className="logo">
+      <div className="logo flex gap-4">
         <Link className='text-2xl transition-all font-bold' to='/'>allStores </Link>
+        <p className='text-2xl transition-all cursor-pointer font-bold' onClick={toogleCart}>Cart {total} </p>
       </div>
 
       <ul className='md:justify-between text-lg font-semibold md:w-2/5 hidden md:flex'>

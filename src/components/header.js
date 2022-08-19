@@ -5,7 +5,7 @@ import SideNav from './SideNav';
 
 import { motion } from 'framer-motion'
 
-function Header() {
+function Header({ showCart, toogleCart }) {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -19,6 +19,7 @@ function Header() {
       <Nav
         isOpen={isOpen}
         setIsOpen={setIsOpen}
+        toogleCart={toogleCart}
       />
 
       <motion.div
