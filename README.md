@@ -4,7 +4,7 @@
 
 ## live: https://olaks-allstores.netlify.app/
 
-## Built with react.js, framer-motion for animations,  react-router for routing.
+## Built with react.js, framer-motion for animations,  react-router for routing and TailwindCSS for Styling it.
 
 ## Project is still in progress, I've optimized the images for quicker load time and SEO
 
